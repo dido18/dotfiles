@@ -1,0 +1,12 @@
+# PYENV
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+
+# GO
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+# TASK https://taskfile.dev/
+export PATH=$PATH:/usr/local/task

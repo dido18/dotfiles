@@ -1,8 +1,14 @@
 #!/bin/bash
 
+
+# Symlink zsh prefs
+rm $HOME/.zshrc
+ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
+
 echo 'Install git-filter-repo'
 echo '------------'
 
 wget https://raw.githubusercontent.com/newren/git-filter-repo/main/git-filter-repo
 sudo chmod +x git-filter-repo
-mv git-filter-repo /usr/local/bin
+sudo mv git-filter-repo /usr/local/bin
+rm git-filter-repo* 2> /dev/null
