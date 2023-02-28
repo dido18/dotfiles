@@ -1,0 +1,3 @@
+#PHP
+alias sail='./vendor/bin/sail'
+

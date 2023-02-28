@@ -1,0 +1,5 @@
+
+# Say hello
+function hello() {
+   echo "Hello functions !!"
+}
