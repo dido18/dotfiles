@@ -5,10 +5,19 @@
 rm $HOME/.zshrc
 ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 
-echo 'Install git-filter-repo'
+#echo 'Install git-filter-repo'
+#echo '------------'
+#
+#wget https://raw.githubusercontent.com/newren/git-filter-repo/main/git-filter-repo
+#sudo chmod +x git-filter-repo
+#sudo mv git-filter-repo /usr/local/bin
+#rm git-filter-repo* 2> /dev/null
+
+
+echo 'Install Arduino2'
 echo '------------'
 
-wget https://raw.githubusercontent.com/newren/git-filter-repo/main/git-filter-repo
-sudo chmod +x git-filter-repo
-sudo mv git-filter-repo /usr/local/bin
-rm git-filter-repo* 2> /dev/null
+wget https://downloads.arduino.cc/arduino-ide/nightly/arduino-ide_nightly-latest_Linux_64bit.AppImage
+sudo chmod +x  arduino-ide_nightly-latest_Linux_64bit.AppImage
+sudo mv arduino-ide_nightly-latest_Linux_64bit.AppImage /usr/local/bin/arduino2
+rm arduino-ide_nightly-latest_Linux_64bit.AppImage 2> /dev/null
